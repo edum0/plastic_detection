@@ -31,10 +31,10 @@ model = tf.keras.models.load_model(
 
 blockchain = Blockchain()
 
-class_names = ["OTHERS", "PC", "PE", "PET", "PP", "PS"]
+class_names = ["HDPE", "LDPE", "PET", "PP", "PS", "PVC"]
 
 def preprocess_image(image):
-    image = image.resize((260, 260)) 
+    image = image.resize((224, 224)) 
     image = np.array(image)
     image = np.expand_dims(image, axis=0)
     return image
