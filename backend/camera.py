@@ -4,7 +4,7 @@ import time
 
 API_URL = "http://127.0.0.1:8000/predict"
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 print("Camera starting...")
 time.sleep(5) 
